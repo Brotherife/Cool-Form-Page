@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Form Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./all.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form">
+        <div class="fm">
+          <h2 class="title">Registration</h2>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            minlength="8"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name=""
+            minlength="8"
+            placeholder="Enter password here"
+            required
+          />
+          <input
+            type="password"
+            name=""
+            id="password2"
+            placeholder="Confirm password"
+            required
+          />
+          <p class="error-msg"></p>
+          <button type="submit" id="btn">Submit</button>
+        </div>
+      </form>
+      <div class="popup" id="popup">
+        <div class="tick">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted</p>
+        <button type="button" id="okBtn">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
